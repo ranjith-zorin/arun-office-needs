@@ -24,6 +24,8 @@ function Header() {
           <Link to="blogs">Blogs</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/contact-us">Contact US</Link>
+          <Link to="/customization">Customization</Link>
+          <Link to="/login">Login</Link>
         </div>
       </header>
     </div>

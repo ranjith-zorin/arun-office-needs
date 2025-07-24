@@ -6,6 +6,9 @@ import Catalog from "./pages/Catalog";
 import Blogs from "./pages/Blogs";
 import ContactUS from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import ProdutDetails from "./pages/ProdutDetails";
+import Login from "./pages/Login";
+import Customization from "./pages/Customization";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +20,9 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact-us" element={<ContactUS />} />
           <Route path="about-us" about element={<AboutUs />} />
+          <Route path="detail/:id" about element={<ProdutDetails />} />
+          <Route path="login" about element={<Login />} />
+          <Route path="customization" about element={<Customization/>} />
         </Route>
       </Routes>
     </BrowserRouter>
