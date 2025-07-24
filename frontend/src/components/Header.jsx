@@ -1,21 +1,17 @@
-import { rgbToHex } from "@mui/material";
-import { color } from "@mui/system";
-import React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div>
-      <header>
+    <AppBar position="sticky">
+      <Toolbar>
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            backgroundColor: "rgb(235, 126, 2)",
-            color: "white",
-            height: "75px",
-            position: "sticky",
+            justifyContent: "space-between",
+            width: "100%"
           }}
         >
           <Link to="/">Arun Office Needs</Link>
@@ -27,8 +23,8 @@ function Header() {
           <Link to="/customization">Customization</Link>
           <Link to="/login">Login</Link>
         </div>
-      </header>
-    </div>
+      </Toolbar>
+    </AppBar>
   );
 }
 
